@@ -1,29 +1,16 @@
-// capitalizeFirst.js
 const assert = require('assert');
 
-// WRITE THE ACTUAL FUNCTION HERE
-/*une chaîne avec plusieurs mots
-une chaîne avec un seul mot (voire une seule lettre)
-une chaîne vide*/
-function capitalizeFirst(input) {
-  return input.length > 0
-    ? input[0].toUpperCase() + input.slice(1)
+function capitalizeFirstLetters(input) {
+  return input.length > 0 ? 
+    input.split(' ').map(word=> word[0].toUpperCase() + word.slice(1)).join(' ') 
     : '';
 }
 
-// Check that capitalizeFirst is a function
-assert.strictEqual(typeof capitalizeFirst, 'function');
-
-// Check that capitalizeFirst accepts one argument
-assert.strictEqual(capitalizeFirst.length, 1);
-
-// Check that capitalizeFirst transforms javaScript correctly
-assert.strictEqual(capitalizeFirst('javaScript'), 'JavaScript');
-
-// Check that it works for a 1-character string
-assert.strictEqual(capitalizeFirst('z'), 'Z');
-
-// Check that it works for an empty string
-assert.strictEqual(capitalizeFirst(''), '');
+assert.strictEqual(typeof capitalizeFirstLetters, 'function');
+assert.strictEqual(capitalizeFirstLetters.length, 1);
+assert.strictEqual(capitalizeFirstLetters('i am learning TDD'), 'I Am Learning TDD')
+assert.strictEqual(capitalizeFirstLetters('javaScript'), 'JavaScript');
+assert.strictEqual(capitalizeFirstLetters('z'), 'Z');
+assert.strictEqual(capitalizeFirstLetters(''), '');
 
 
