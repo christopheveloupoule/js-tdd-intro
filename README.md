@@ -15,3 +15,26 @@ on va hiérarchiser la suite de tests, en écrivant trois cas distincts
 (cas général, cas limites avec chaîne de 0 ou 1 caractère),
 plus un pour tester que capitalizeFirst est une fonction prenant un argument.
 
+quest03 - Squelette du rectangle :
+// Rectangle.js
+class Rectangle {
+  constructor(a, b) {
+    this.a = a;
+    this.b = b;
+  }
+
+  isSquare() {
+
+  }
+
+  getArea() {
+
+  }
+
+  getPerimeter() {
+
+  }
+}
+
+module.exports = Rectangle;
+
