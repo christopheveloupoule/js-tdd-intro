@@ -1,0 +1,24 @@
+{
+  "name": "js-tdd-intro",
+  "version": "1.0.0",
+  "description": "On crée d'abord un package.json, sans prendre la peine de le personnaliser : npm init -y",
+  "main": "capitalizeFirstLetters.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopheveloupoule/js-tdd-intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christopheveloupoule/js-tdd-intro/issues"
+  },
+  "homepage": "https://github.com/christopheveloupoule/js-tdd-intro#readme",
+  "dependencies": {
+    "mocha": "^8.2.1"
+  },
+  "devDependencies": {}
+}
